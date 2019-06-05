@@ -1,0 +1,718 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/*STYLES FOR HEADER ELEMENTS*/
+
+header{
+    max-width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+header > [src]:first-child{margin-top: -330px;}
+
+header [src]:nth-child(2){
+    position: absolute;
+    top: 15px;
+    left: 110px;
+}
+
+header h3{
+    position: absolute;
+    left: 50px;
+    top: 45px;
+    color: white;
+    font-family: acumin-pro, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-variant: small-caps;
+    font-size: 35px;
+    text-shadow: 3px 5px 6px #000000;
+}
+
+.search_top{
+    position: absolute;
+    top: 30px;
+    right: 200px;
+    height: 35px;
+    background-image: url(/images/musica-searcher.svg);
+    background-repeat: no-repeat;
+    background-position: 6%;
+    background-size: 23px;
+    border: 1px solid white;
+    outline: none;
+    outline-offset: 0;
+    
+}
+.search_top::placeholder{
+    color: gray;
+    text-align: center;
+    font-family: acumin-pro, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    
+}
+
+.ok_top{
+    position: absolute;
+    top: 29px;
+    right: 135px;
+    width: 65px;
+    height: 41px;
+    background-color: #0b0a0c;
+    border: 1px solid #0b0a0c;
+    color: white;
+    font-family: droid-sans, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+/*STYLES FOR TOPMENU-NAVIGATION*/
+
+nav {
+  position: absolute;
+  top: 520px;
+  width: 1385px;
+  height: 130px;
+  margin-left: 15%;}
+
+ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;}
+
+.topmenu > li {
+     vertical-align: top;
+     width: 300px;
+     height: 130px;
+     display: inline-block;
+     border: none;
+     cursor: pointer;}
+
+.topmenu > li:last-child {
+     margin-right: 0;}
+
+.topmenu > li:first-child{
+     width: 165px;
+     background-color: #3c52dd;}
+
+.four ul a {   
+     display: block;
+     text-decoration: none;
+     outline: none;
+     font-family: droid-sans, sans-serif;
+     font-style: normal;
+     font-weight: 100;
+     transition: .5s linear;
+     color: white;
+     font-size: 26px;
+     text-align: center;
+     padding-top: 15%;
+     font-variant: small-caps;}
+
+.a_home_top{
+     padding-top: 18%;}
+
+.submenu {
+     position: absolute;
+     top: 100%;
+     left: 0;
+     width: 100%;
+     z-index: 10;
+     -webkit-transition: 0.5s ease-in-out;
+     -moz-transition: 0.5s ease-in-out;
+     -o-transition: 0.5s ease-in-out;
+     transition: 0.5s ease-in-out;}
+
+.four ul {
+     background: #08070a;}
+
+.four .submenu {
+     -webkit-transform: scaleY(0);
+	 -ms-transform: scaleY(0);
+	 transform: scaleY(0);
+     -webkit-transform-origin: 0 0;
+	 -ms-transform-origin: 0 0;
+	 transform-origin: 0 0;
+     background: #08070a;}
+
+.four ul li:hover .submenu {
+     -webkit-transform: scaleY(1);
+	 -ms-transform: scaleY(1);
+	 transform: scaleY(1);}
+
+.four ul a {
+     color: white;}
+
+.submenu li a {
+     border-bottom: 1px solid rgba(255,255,255,.3);
+     color: white;
+     text-align: center;
+     padding-bottom: 20px;
+     padding-top: 20px;
+     font-size: 20px;}
+
+/*STYLES FOR SLIDER IN SECTION-MENU*/
+
+.slider{
+    max-width: 800px;
+    margin: 0;
+    display: inline-block;
+    margin-left: 290px;
+    margin-top: 220px;
+    vertical-align: top;
+}
+
+.slider_slide_text{
+    background-color: #1e1c218c;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
+    opacity: 1;
+    font-family: poiret-one, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px #1e1c21;
+}
+
+.slider_slide_text h2{
+    padding: 0;
+    padding-left: 30px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: Oswald, sans-serif;
+}
+
+.slider_slide_text p{
+    padding: 0;
+    padding-left: 30px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    color: #b5b5b5;
+}
+
+.arrow2_slider, .arrow1_slider{
+    width: 80px;
+    height: 80px;
+    background-color: #3c52dd;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 260px;
+    z-index: 1;
+}
+
+.arrow2_slider > [src], .arrow1_slider > [src]{
+    width: 45px;
+    height: 45px;
+    padding-left: 19px;
+    padding-top: 17px;
+}
+
+.arrow1_slider > [src]{
+    transform: scale(-1,1);
+    float: right;
+}
+
+/*STYLES FOR ASIDE IN SECTION-MENU*/
+
+section > aside{
+    display: inline-block;
+    max-width: 420px;
+    margin: 0;
+    padding: 0;
+    margin-left: 75px;
+    margin-top: 220px;
+}
+
+.aside_near_slider{
+    width: 420px;
+    height: 230px;
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/016/428/178/large/nicodemus-john-mattisson-gradedwb.jpg?1552129254);
+    background-size: 420px;
+    background-position-y: 40%;
+}
+
+.aside_near_slider:last-child{
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/017/237/153/large/kaijie-huang-20190412.jpg?1555171176);
+    background-size: 420px;
+    background-position-y: 55%;
+    margin-top: 20px;
+}
+
+.aside_near_slider_web{
+    width: 80px;
+    height: 80px;
+    background-color: #3c52dd;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    float: right;
+    margin-top: 150px;
+    cursor: pointer;
+}
+
+.aside_near_slider_web > [src]{
+    padding-top: 20px;
+}
+
+.aside_near_slider_search{
+    width: 80px;
+    height: 80px;
+    background-color: #0b0a0c;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    float: right;
+    margin-top: 150px;
+    cursor: pointer;
+}
+
+.aside_near_slider_search > [src]{
+    padding-top: 23px;
+}
+
+/*STYLES FOR ELEMENTS IN MAIN-MENU*/
+
+main{
+    margin: 0;
+    margin-top: 100px;
+}
+
+main > p{
+    font-family: bebas-neue, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 50px;
+    margin: 0;
+    margin-left: 290px;
+    text-shadow: 1px 1px 1px #00000020;
+    color: rgb(65, 65, 65);
+    margin-bottom: 30px;
+    cursor: default;
+}
+
+/*STYLES FOR FIRTS ASIDE-MENU*/
+.benefits_aside{
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.benefits_aside:first-child{
+    margin-left: 290px;
+}
+
+.benefits_aside:nth-child(2), .benefits_aside:nth-child(3){
+    margin-left: 140px;
+}
+
+.benefits_aside:nth-child(3){
+}
+
+.benefits_aside > [src]{
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+.benefits_aside > [type=button]{
+    margin: 0;
+    padding: 0;
+    width: 340px;
+    font-family: poiret-one, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background: #08070a;
+    height: 60px;
+    border: none;
+    color: #fff;
+    font-size: 19px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.benefits_aside > [type=button]:active, .benefits_aside > [type=button]:focus{
+    outline: none;
+}
+
+.benefits_aside_text{
+    width: 340px;
+    background-color: #2098d1;
+    margin: 0;
+    display: none;
+}
+
+.benefits_aside_text > p{
+    font-family: poiret-one, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    font-size: 25px;
+    margin: 0;
+    padding: 25px 10px 25px 10px;
+    line-height: 30px;
+}
+
+/*STYLES FOR SECOND ASIDE-MENU*/
+
+.comments{
+    display: inline-block;
+    max-width: 1000px;
+    margin: 0;
+    margin-left: 290px;
+}
+
+.comment_in{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 290px;
+}
+
+.comment_img{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background: pink;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.comment_img > [src]{
+    position: relative;
+    right: 100px;
+}
+
+.comment_in h2{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    margin-left: 40px;
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px #00000020;
+    color: rgb(65, 65, 65);
+}
+
+.comment_in p{
+    font-family: poiret-one, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    position: relative;
+    bottom: 165px;
+    left: 240px;
+}
+
+.links{
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    margin-right: 300px;
+}
+
+.links > h2{
+    font-family: bebas-neue, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 39px;
+    margin-top: 0;
+    text-shadow: 1px 1px 1px #00000020;
+    color: rgb(65, 65, 65);
+}
+
+.link_web{
+    width: 340px;
+    height: 63px;
+    cursor: pointer;
+}
+
+.a_link:visited{
+    color: #9b9a9a;
+}
+
+.link_web:hover .a_link:visited{
+    color: #fff;
+}
+
+.link_web > [src]{
+    display: inline-block;
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.link_web > a{
+    display: inline-block;
+    font-family: poiret-one, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 0;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+.first_link{
+    background-color: #efefef;
+}
+
+.second_link{
+    background-color: #f6f5f5;
+}
+
+/*STYLES FOR POSTCARD IN MAIN-MENU*/
+
+.postcard{
+    overflow: hidden;
+    margin: 100px auto;
+    height: 380px;
+    width: 1300px;
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/004/305/357/large/guillem-h-pongiluppi-501-st-legion-vader-s-fist-vs-space-cockroaches-9-guillemhp.jpg?1482242657);
+    background-size: 1300px;
+    background-position-x: 0px;
+    background-position-y: 450px;
+    transition: all 2s;
+}
+
+/*.postcard:hover{
+    background-size: 1700px;
+    background-position-x: -150px;
+    background-position-y: 490px; 
+}*/
+
+.postcard h1{
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-family: droid-sans, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 90px;
+    font-variant: small-caps;
+    margin: 0;
+    margin-top: 120px;
+    text-shadow: 1px 1px 1px #000;
+    cursor: pointer;
+}
+
+.postcard h1:last-child{
+    float: right;
+    margin-right:200px; 
+}
+
+.postcard h1:first-child{
+    margin-left: 200px;
+}
+
+.postcard h1 a:visited, .postcard h1 a:link{
+    color: #fff;
+    text-decoration: none;
+}
+
+#line{
+    display: inline-block;
+    margin: 0;
+    width: 3px;
+    height: 600px;
+    background-color: #fff;
+    position: relative;
+    left: 270px;
+    top: -90px;
+    transform: rotate(45deg);
+}
+
+/*STYLES FOR FEATURED GAMES ELEMENTS*/
+
+.featured_icon{
+    width: 360px;
+    height: 240px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+    margin-left: 120px;
+    margin-bottom: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.featured_icon:hover{
+    box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.featured_icon:nth-child(1), .featured_icon:nth-child(4), .featured_icon:nth-child(7){
+    margin-left: 290px;
+}
+
+.featured_icon:nth-child(1){
+    background-image: url(https://psmedia.playstation.com/is/image/psmedia/CaptainAmerica_FeaturedImage?$TwoColumn_Legacy$);
+    background-position-x: -30px; 
+}
+
+.featured_icon:nth-child(2){
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/004/821/905/large/james-daggs-sonic-adventure-complete.jpg?1486521041);
+    background-size: 360px;
+}
+
+.featured_icon:nth-child(3){
+    background-image: url(https://i.playground.ru/i/blog/333803/icon.jpg);
+    background-size: 430px;
+}
+
+.featured_icon:nth-child(4){
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/000/745/674/large/julien-renoult-pr-streets-of-rage-julien-renoult-sega.jpg?1432177801);
+    background-size: 380px;
+}
+
+.featured_icon:nth-child(5){
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/011/746/467/large/park-junkyu-bayo1.jpg?1531201063);
+    background-size: 360px;
+}
+
+.featured_icon:nth-child(6){
+    background-image: url(https://cdn03.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_ValkyriaChronicles_image1600w.jpg);
+    background-size: 480px;
+    background-position-x: -120px; 
+}
+
+.featured_icon:nth-child(7){
+    background-image: url(https://www.wayorecords.com/img/cms/skiesofArcadia%20illustration.jpg);
+    background-size: 360px;
+}
+
+.featured_icon:nth-child(8){
+    background-image: url(https://www.justpushstart.com/wp-content/uploads/2013/09/castle_of_illusion.png);
+    background-size: 485px;
+}
+
+.featured_icon:last-child{
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/008/416/403/large/christopher-bretz-ga-pkf-xbox360-bretz5-f.jpg?1512614411);
+    background-size: 360px;
+    background-position-y: 365px;   
+}
+
+.search_near_footer{
+    width: 80px;
+    height: 80px;
+    background-color: #0b0a0c;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    margin-top: 160px;
+}
+
+.search_near_footer > [src]:first-child{
+    padding-top: 25px;
+}
+
+.dots_near_footer{
+    width: 80px;
+    height: 80px;
+    background-color: #3c52dd;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    margin-top: 160px;    
+}
+
+.dots_near_footer > [src]:last-child{
+    padding-top: 25px;
+}
+
+/*STYLES FOR FOOTER ELEMENTS*/
+
+footer{
+    background-color: #024d89;
+    height: 350px;    
+}
+
+footer > [src]:first-child{
+    display: inline-block;
+    margin: 0;
+    margin-top: 130px;
+    margin-left: 290px;
+}
+
+footer > p{
+    font-family: acumin-pro, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0;
+    margin-top: 125px;
+    font-size: 30px;
+    margin-left: 14px;
+    vertical-align: top;
+}
+
+footer > p span{
+    color: #fff;
+}
+
+.sega_logo_footer{
+    vertical-align: top;
+    margin: 0;
+    margin-left: 300px;
+    margin-top: 150px;
+}
+
+.social_logo{
+    display: inline-block;
+    float: right;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 130px;
+}
+
+.first_logo{
+    margin-right: 370px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
